@@ -45,9 +45,6 @@ ul{
     padding-top: 94px;
     padding-bottom: 94px;   
 }
-.icons{
-    
-}
 /* ==========HEADER========== */
 .header{
     background-color: #ffffff;
@@ -66,7 +63,8 @@ ul{
 }
 .auth{
     display: flex;
-    margin-left: auto;   
+    margin-left: auto;
+  
 }
 .logo-box{
     display: flex;
@@ -106,6 +104,14 @@ margin-right: 50px;
 .header-link:hover{
     color: var(--accent-color);
 }
+
+.contact-icons{
+    margin-right: 10px;
+    align-items: center;
+    vertical-align: middle;
+    fill: var(--primary-text-color);
+    background-size: cover;
+}
 .auth .item:not(:last-child){
     margin-right: 50px;
 }
@@ -121,18 +127,26 @@ margin-right: 50px;
 .auth-header:hover{
     color: var(--accent-color); 
 }
-.active-page{
-    color: var(--accent-color);
+.auth-header:focus .icons-active,
+.auth-header:hover .icons-active{
+    fill: var(--accent-color);   
 }
 
 /*========== MAIN STUDIO==========*/
 /*========== HIRO ==========*/
 .hero{
+    background-image: 
+    linear-gradient(
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)),
+    url("../images/hero.jpg");
+    background-size: cover;
     padding-top: 200px;
     padding-bottom: 200px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #2F303A;
+    max-width: 1600px;
+    background-color: #C4C4C4;
     text-align: center;   
 }
 .hero-title{
@@ -208,6 +222,13 @@ margin-right: 50px;
     line-height: 1.71;
     color: var(--primary-text-color);  
 }
+.work-icons{
+    display: flex;
+    padding: auto;
+    margin-bottom: 30px;
+    width: 70px;
+    height: 70px;
+}
 /* ==========OUR-WORK========== */
 .our-work{
     padding-top: 0;
@@ -247,8 +268,10 @@ margin-right: 50px;
     margin-right: 0;
 }
 .team-item{
-padding-top: 30px;
-padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 32px;
+    padding-left: 32px;
 }
 .team-names{
     margin-top: 0;
@@ -261,10 +284,35 @@ padding-bottom: 30px;
 }
 .profession{
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+}
+.social-list{
+    display: flex;
+    justify-content: space-between;
+}
+.social-list-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon{
+    fill: #ffffff;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: var(--accent-color);
+   
+}
+.social-list-icon{
+    fill: #AFB1B8;
 }
 /*========== PORTFOLIO ==========*/
 .portfolio-link{
@@ -382,3 +430,4 @@ margin-bottom: 20px;
 .address, .footer-link{
     margin-bottom: 9px;
 }
+
