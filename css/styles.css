@@ -222,12 +222,31 @@ margin-right: 50px;
     line-height: 1.71;
     color: var(--primary-text-color);  
 }
-.work-icons{
+
+.icon-list-work{
     display: flex;
-    padding: auto;
+    justify-content: space-between;
     margin-bottom: 30px;
+}
+.icon-item-work{
+    display: block;
+    width: 270px;
+    height: 120px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 100px;
+    padding-left: 100px;
+    border-color: #f5f4fa;
+}
+.icon-item-work:not(:last-child){
+    margin-right: 30px;
+}
+.icon-work{
     width: 70px;
     height: 70px;
+    
+    
+    
 }
 /* ==========OUR-WORK========== */
 .our-work{
