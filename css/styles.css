@@ -131,6 +131,9 @@ margin-right: 50px;
 .auth-header:hover .icons-active{
     fill: var(--accent-color);   
 }
+.active-page{
+    color: var(--accent-color);
+}
 
 /*========== MAIN STUDIO==========*/
 /*========== HIRO ==========*/
@@ -229,14 +232,14 @@ margin-right: 50px;
     margin-bottom: 30px;
 }
 .icon-item-work{
-    display: block;
     width: 270px;
     height: 120px;
     padding-top: 25px;
     padding-bottom: 25px;
     padding-right: 100px;
     padding-left: 100px;
-    border-color: #f5f4fa;
+    background-color: #F5F4FA;
+    border-radius: 4px;
 }
 .icon-item-work:not(:last-child){
     margin-right: 30px;
@@ -333,6 +336,36 @@ margin-right: 50px;
 .social-list-icon{
     fill: #AFB1B8;
 }
+/*========== CLIENTS==========*/
+.title-clients{
+margin-top: 0;
+margin-bottom: 50px;
+}
+.list-clients{
+display: flex;
+} 
+.item-clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   width: 170px;
+   height: 92px;
+   padding: 32px 16px;
+   border: 1px solid #AFB1B8;
+box-sizing: border-box;
+border-radius: 4px;
+   
+}
+
+.item-clients:not(:last-child){
+    margin-right: 30px;
+}
+
+.icon-clients{
+width: 106px;
+height: 60px;
+
+} 
 /*========== PORTFOLIO ==========*/
 .portfolio-link{
     display:block; 
