@@ -247,7 +247,7 @@ margin-right: 50px;
 }
 .our-work-title{
     margin-top: 0;
-    margin-bottom: 50;
+    margin-bottom: 50px;
 }
 .our-work-list{
     display: flex;
@@ -428,7 +428,7 @@ margin-right: 50px;
 .item-of-cards:nth-child(3n){
     margin-right: 0;
 }
-.item-of-cards:nth-list-child(3n){
+.item-of-cards:nth-list-child(3n) {
     margin-right: 0;
 }
 .item-of-cards:nth-last-child(-n + 3) {
@@ -514,7 +514,6 @@ margin-bottom: 20px;
 .heading-footer{
     margin-top: 0;
     margin-bottom: 20px;
-    padding: auto;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
